@@ -1,5 +1,4 @@
 import {HeaderLayout} from "../components/headerLayout/headerLayout";
-import classes from '../styles/homePage.module.css';
 import {HeaderMain} from "../components/headerMain/HeaderMain";
 import {BodyMain} from "../components/bodyMain/bodyMain";
 import {useEffect, useState} from "react";
@@ -28,9 +27,9 @@ export default function Home({fetchedData}: InferGetStaticPropsType<typeof getSt
 
   return (
           <HeaderLayout title={'Home Page'}>
-              <main className={classes.main}>
-                  <div className={classes.mainContainer}>
-                      <section className={`${classes.mainHeader} ${classes.headerMain}`}>
+              <main className={'main'}>
+                  <div className={'mainContainer'}>
+                      <section className={'mainHeader headerMain'}>
                           <HeaderMain
                           initTo={initTo}
                           initFrom={initFrom}
@@ -38,7 +37,7 @@ export default function Home({fetchedData}: InferGetStaticPropsType<typeof getSt
                           setInitFrom={setInitFrom} setRates={setRates}
                           />
                       </section>
-                      <section className={`${classes.mainBody} ${classes.bodyMain}`}>
+                      <section className={'mainBody bodyMain'}>
                           <BodyMain currentCurrency={currentCurrency}
                                     currencyFrom={currencyFrom}
                                     currencyTo={currencyTo}
