@@ -1,4 +1,4 @@
-import classes from './bodyMain.module.css';
+import classes from '../../styles/bodyMain.module.css'
 
 
 interface IBodyMain {

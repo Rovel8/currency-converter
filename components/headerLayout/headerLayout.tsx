@@ -1,4 +1,4 @@
-import classes from './headerLayout.module.css';
+import classes from '../../styles/headerLayout.module.css'
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";

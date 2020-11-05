@@ -1,4 +1,4 @@
-import classes from './HeaderMain.module.css';
+import classes from '../../styles/HeaderMain.module.css';
 import React from "react";
 import {currencyList} from "../../currencyList";
 
