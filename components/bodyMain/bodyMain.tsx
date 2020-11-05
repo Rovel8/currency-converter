@@ -1,6 +1,3 @@
-import classes from '../../styles/bodyMain.module.css'
-
-
 interface IBodyMain {
     currencyFrom: string
     currencyTo: string
@@ -13,12 +10,12 @@ export const BodyMain: React.FC<IBodyMain> = ({currencyFrom, currencyTo, current
     }
 
     return(
-        <div className={classes.bodyMain}>
-            <div className={classes.bodyMain__header}>
+        <div className={'body-main'}>
+            <div className={'bodyMain__header'}>
                 <span>One {currencyFrom} is equal to: </span>
             </div>
-            <h1 className={classes.bodyMain__title}>{currentCurrency}</h1>
-            <div className={classes.bodyMain__footer}>
+            <h1 className={'bodyMain__title'}>{currentCurrency}</h1>
+            <div className={'bodyMain__footer'}>
                 <span>{currencyTo}</span>
             </div>
         </div>

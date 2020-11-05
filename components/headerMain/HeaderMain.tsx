@@ -1,4 +1,3 @@
-import classes from '../../styles/HeaderMain.module.css';
 import React from "react";
 import {currencyList} from "../../currencyList";
 
@@ -27,11 +26,11 @@ export const HeaderMain: React.FC<IHeaderMain> = ({initTo, initFrom, setInitFrom
     }
 
     return(
-        <div className={classes.headerMain__container}>
-                <form className={`${classes.headerMain__form} ${classes.formMain}`}>
-                    <fieldset className={`${classes.formMain__item} ${classes.itemForm}`}>
-                        <label className={classes.itemForm__label} htmlFor="from">From</label>
-                        <select onChange={(e) => onChange(e)} className={classes.itemForm__field} value={initFrom} name={'from'} id={'from'} >
+        <div className={'headerMain__container'}>
+                <form className={'headerMain__form formMain'}>
+                    <fieldset className={'formMain__item itemForm'}>
+                        <label className={'itemForm__label'} htmlFor="from">From</label>
+                        <select onChange={(e) => onChange(e)} className={'itemForm__field'} value={initFrom} name={'from'} id={'from'} >
                             {
                                 Object.keys(currencyList).sort().map((item, index) => (
                                     <option key={index} value={item}>{currencyList[`${item}`]}</option>
@@ -39,9 +38,9 @@ export const HeaderMain: React.FC<IHeaderMain> = ({initTo, initFrom, setInitFrom
                             }
                         </select>
                     </fieldset>
-                    <fieldset className={`${classes.formMain__item} ${classes.itemForm}`}>
-                        <label className={classes.itemForm__label} htmlFor="to">To</label>
-                        <select onChange={(e) => onChange(e)} className={classes.itemForm__field} value={initTo} name={'to'} id={'to'} >
+                    <fieldset className={'formMain__item itemForm'}>
+                        <label className={'itemForm__label'} htmlFor="to">To</label>
+                        <select onChange={(e) => onChange(e)} className={'itemForm__field'} value={initTo} name={'to'} id={'to'} >
                             {
                                 Object.keys(currencyList).sort().map((item, index) => (
                                     <option key={index} value={item}>{currencyList[`${item}`]}</option>
